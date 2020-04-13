@@ -1,9 +1,13 @@
-const password = "pass";
+let favoriteBook = [];
 
-if (password.length >= 12 && password.includes("@")) {
-  console.log("well done ninja!");
-} else if (password.lenght >= 8) {
-  console.log("not bad!!");
-} else {
-  console.log("man up sissy!");
+function addFavoriteBook(bookName) {
+  if (!bookName.includes("Great")) {
+    favoriteBook.push(bookName);
+  }
 }
+addFavoriteBook("the gatsby");
+addFavoriteBook("the hunter");
+
+console.log(favoriteBook);
+
+// function print(array)
